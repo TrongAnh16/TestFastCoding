@@ -123,6 +123,64 @@
   z-index: 5;
 }
 
+.check {
+  margin-top: 86%;
+    margin-left: 12%;
+    z-index: 5;
+}
+
+#checkmore {
+  font-family: "Amiri", serif;
+  width: 14%;
+    height: 1.3em;
+    background-color: rgba(39,42,25,255); /* Màu nền mặc định của nút */
+    color: white; /* Màu chữ mặc định của nút */
+    border: rgba(55,59,35,255);
+    border-width: 2em;
+    cursor: pointer; /* Biến con trỏ thành hình bàn tay khi di chuột qua nút */
+    transition: background-color 0.3s, color 0.3s; /* Tạo hiệu ứng chuyển đổi màu nền và màu chữ */
+}
+
+#checkmore:hover {
+  background-color: #ddeade; /* Màu nền khi di chuột qua */
+    color: rgb(163, 57, 57); /* Màu chữ khi di chuột qua */
+}
+
+#p1 {
+  padding-top: 6%;
+  justify-content: center;
+  font-size: 60%;
+}
+
+#p2 {
+  padding-top: 6%;
+  justify-content: center;
+  font-size: 60%;
+}
+
+.order {
+  margin-top: 201%;
+    margin-left: 46%;
+    z-index: 5;
+}
+
+#order {
+  font-family: "Amiri", serif;
+  width: 14%;
+    height: 1.3em;
+    background-color: rgba(25,25,13,255); /* Màu nền mặc định của nút */
+    color: white; /* Màu chữ mặc định của nút */
+    border: rgba(64,68,41,255);
+    border-width: 2em;
+    cursor: pointer; /* Biến con trỏ thành hình bàn tay khi di chuột qua nút */
+    transition: background-color 0.3s, color 0.3s; /* Tạo hiệu ứng chuyển đổi màu nền và màu chữ */
+}
+
+#order:hover {
+  background-color: #ddeade; /* Màu nền khi di chuột qua */
+    color: rgb(163, 57, 57); /* Màu chữ khi di chuột qua */
+}
+
 .lorembig {
   margin-top: 109%;
     margin-left: 57%;
