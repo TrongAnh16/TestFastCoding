@@ -1,10 +1,8 @@
-
 #wrapper {
   position: relative;
   background: #1a1c0f;
   width: 35%;
   display: flex;
-  height: 1000px;
   margin-bottom: 0%;
 }
 
@@ -12,17 +10,21 @@
   width: 100%;
   margin-left: 0;
   position: absolute;
-  height: 180px;
+}
+
+.cungbia {
+  filter: brightness(50%);
+  z-index: 2;
 }
 
 .logozeus {
   width: 100%;
-  z-index: 2;
+  z-index: 3;
 }
 
 #imgzeus {
-  padding-top: 8%;
-    width: 7%; /* 6% chiều rộng của viewport */
+  padding-top: 6.5%;
+  width: 7%; /* 6% chiều rộng của viewport */
   height: auto; /* Chiều cao tự động điều chỉnh để duy trì tỷ lệ khung hình */
   max-width: 100%; /* Hạn chế kích thước tối đa cho hình ảnh không vượt quá kích thước gốc */
   display: flex; /* Đảm bảo hình ảnh được hiển thị là một khối */
@@ -31,20 +33,28 @@
 
 .logoan {
   margin-top: 70%;
-    width: 85%;
-    z-index: 3;
+  width: 85%;
+  z-index: 3;
 }
 .chaibia {
   margin-left: 62.5%;
-    width: 55%;
-    margin-top: 57%;
-    z-index: 7;
+  width: 55%;
+  margin-top: 57%;
+  z-index: 7;
 }
 
 .nembia {
-  margin-top: 50%;
+  margin-top: 48%;
+    width: 100%;
+    margin-left: 68%;
+    z-index: 2;
+}
+
+.cocbia {
+  margin-top: 130%;
   width: 100%;
-  margin-left: 68%;
+  margin-left: 50%;
+  z-index: 5;
 }
 
 .uongbia {
@@ -53,5 +63,94 @@
 }
 
 .rotbia {
-  margin-top: 139%;
+  margin-top: 51%;
+  z-index: 1;
+}
+
+#beer {
+  display: flex;
+  position: absolute;
+  width: 40%;
+  margin-top: 7%;
+  margin-left: 30%;
+  z-index: 3;
+}
+
+#thanh1 {
+  width: 20%;
+  position: absolute;
+  margin-top: 8%;
+  margin-left: 24%;
+  z-index: 3;
+}
+
+#thanh2 {
+  width: 20%;
+  position: absolute;
+  margin-top: 8%;
+  margin-left: 56%;
+  z-index: 3;
+}
+
+#dan {
+  width: 12%;
+  position: absolute;
+  margin-top: 15%;
+  margin-left: 45.5%;
+}
+
+.thejoy {
+  margin-top: 58%;
+  margin-left: 12%;
+  z-index: 2;
+}
+
+.wedevelop {
+  margin-top: 62%;
+  margin-left: 12%;
+  z-index: 2;
+}
+
+.zeus {
+  margin-top: 74%;
+  margin-left: 12%;
+  z-index: 5;
+}
+
+.this {
+  margin-top: 80%;
+  margin-left: 12%;
+  z-index: 5;
+}
+
+.lorembig {
+  margin-top: 109%;
+    margin-left: 57%;
+    z-index: 5;
+}
+
+.hand {
+  margin-top: 147%;
+  margin-left: 9%;
+  z-index: 5;
+}
+
+
+
+.lorem {
+  margin-top: 158%;
+  margin-left: 9%;
+  z-index: 5;
+}
+
+.start {
+  margin-top: 190%;
+  margin-left: 26%;
+  z-index: 5;
+}
+
+.beersmall {
+  margin-top: 195%;
+  margin-left: 40%;
+  z-index: 5;
 }
