@@ -8,8 +8,9 @@
 
 .box {
   width: 100%;
-  margin-left: 0;
+  margin-left: 0px;
   position: absolute;
+  height: 100%;
 }
 
 .cungbia {
@@ -45,9 +46,9 @@
 
 .nembia {
   margin-top: 48%;
-    width: 100%;
-    margin-left: 68%;
-    z-index: 2;
+  width: 100%;
+  margin-left: 68%;
+  z-index: 2;
 }
 
 .cocbia {
@@ -113,21 +114,21 @@
 
 .scroll {
   margin-top: 46%;
-    margin-left: 47%;
-    z-index: 3;
+  margin-left: 47%;
+  z-index: 3;
+  animation: animate 1s linear infinite;
 }
 
 .muiten {
   margin-top: 48%;
-    margin-left: 50%;
-    z-index: 3;
-    animation: animate 1s linear infinite;
+  margin-left: 50%;
+  z-index: 3;
+  animation: animate 1s linear infinite;
 }
 
 @keyframes animate {
-  0%
-  {
-    transform: translateY(-5px);
+  0% {
+    transform: translateY(-10px);
   }
 }
 
@@ -145,12 +146,12 @@
 
 .check {
   margin-top: 86%;
-    margin-left: 12%;
-    z-index: 5;
+  margin-left: 12%;
+  z-index: 5;
 }
 
 #span {
-  font: 0.7em Amiri sans-serif;
+  font: 80% Amiri sans-serif;
   font-family: "Amiri", serif;
   position: relative;
   display: inline-block;
@@ -158,65 +159,57 @@
 }
 
 #checkmore {
-  width: 10vw;
-    background-color: rgba(39,42,25,255); /* Màu nền mặc định của nút */
-    color: white; /* Màu chữ mặc định của nút */
-    cursor: pointer; /* Biến con trỏ thành hình bàn tay khi di chuột qua nút */
-    transition: background-color 0.3s, color 0.3s; /* Tạo hiệu ứng chuyển đổi màu nền và màu chữ */
-  }
+  width: 11%;
+  z-index: 5;
+  background-color: rgba(39, 42, 25, 255); /* Màu nền mặc định của nút */
+  color: white; /* Màu chữ mặc định của nút */
+  cursor: pointer; /* Biến con trỏ thành hình bàn tay khi di chuột qua nút */
+  transition: background-color 0.3s, color 0.3s; /* Tạo hiệu ứng chuyển đổi màu nền và màu chữ */
+}
 
 #checkmore:hover {
   background-color: #ddeade; /* Màu nền khi di chuột qua */
-    color: rgb(163, 57, 57); /* Màu chữ khi di chuột qua */
+  color: rgb(163, 57, 57); /* Màu chữ khi di chuột qua */
 }
 
-#checkmore:active {  
-  background-color: rgba(39,42,25,255);  
-  box-shadow: 0 5px #666;  
+#checkmore:active {
+  background-color: rgba(39, 42, 25, 255);
+  box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
-#p1 {
-  padding-top: 6%;
-  font-size: 60%;
-}
-
-#p2 {
-  padding-top: 6%;
-  justify-content: center;
-  font-size: 60%;
-}
-
 .order {
-  display: block;
-  margin-top: 201%;
-    margin-left: 46%;
-    z-index: 5;
+  display: inline-block;
+  margin-top: 200%;
+  margin-left: 46%;
+  z-index: 5;
 }
 
-#order {
-  width: 10vw;
-    background-color: rgba(25,25,13,255); /* Màu nền mặc định của nút */
-    color: white; /* Màu chữ mặc định của nút */
-    cursor: pointer; /* Biến con trỏ thành hình bàn tay khi di chuột qua nút */
-    transition: background-color 0.3s, color 0.3s; /* Tạo hiệu ứng chuyển đổi màu nền và màu chữ */
+#orderbutton {
+  margin-left: -2%;
+  z-index: 5;
+  width: 12%;
+  background-color: rgba(25, 25, 13, 255); /* Màu nền mặc định của nút */
+  color: white; /* Màu chữ mặc định của nút */
+  cursor: pointer; /* Biến con trỏ thành hình bàn tay khi di chuột qua nút */
+  transition: background-color 0.3s, color 0.3s; /* Tạo hiệu ứng chuyển đổi màu nền và màu chữ */
 }
 
-#order:hover {
+#orderbutton:hover {
   background-color: #ddeade; /* Màu nền khi di chuột qua */
-    color: rgb(163, 57, 57); /* Màu chữ khi di chuột qua */
+  color: rgb(163, 57, 57); /* Màu chữ khi di chuột qua */
 }
 
-#order:active {  
-  background-color: rgba(39,42,25,255);  
-  box-shadow: 0 5px #666;  
+#orderbutton:active {
+  background-color: rgba(39, 42, 25, 255);
+  box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
 .lorembig {
   margin-top: 109%;
-    margin-left: 57%;
-    z-index: 5;
+  margin-left: 57%;
+  z-index: 5;
 }
 
 .hand {
@@ -224,8 +217,6 @@
   margin-left: 9%;
   z-index: 5;
 }
-
-
 
 .lorem {
   margin-top: 158%;
@@ -243,4 +234,109 @@
   margin-top: 195%;
   margin-left: 40%;
   z-index: 5;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 740px) {
+  .check {
+    padding: 8px 16px;
+    
+  }
+  .order {
+    padding: 8px 16px;
+  }
+
+  #span {
+    font: 0.4em Amiri sans-serif;
+  }
+
+  #checkmore {
+    margin-left: -3%;
+    width: 14%;
+    z-index: 5;
+    background-color: rgba(39, 42, 25, 255); /* Màu nền mặc định của nút */
+    color: white; /* Màu chữ mặc định của nút */
+    cursor: pointer; /* Biến con trỏ thành hình bàn tay khi di chuột qua nút */
+    transition: background-color 0.3s, color 0.3s; /* Tạo hiệu ứng chuyển đổi màu nền và màu chữ */
+  }
+
+  #orderbutton {
+    margin-left: -5%;
+    z-index: 5;
+    width: 16%;
+    background-color: rgba(25, 25, 13, 255); /* Màu nền mặc định của nút */
+    color: white; /* Màu chữ mặc định của nút */
+    cursor: pointer; /* Biến con trỏ thành hình bàn tay khi di chuột qua nút */
+    transition: background-color 0.3s, color 0.3s; /* Tạo hiệu ứng chuyển đổi màu nền và màu chữ */
+  }
+
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+  .check {
+    padding: 8px 16px;
+  }
+
+  .order {
+    padding: 8px 16px;
+  }
+
+  #span {
+    font: 0.6em Amiri sans-serif;
+  }
+
+  #checkmore {
+    margin-left: -2%;
+    width: 12%;
+    z-index: 5;
+    background-color: rgba(39, 42, 25, 255); /* Màu nền mặc định của nút */
+    color: white; /* Màu chữ mặc định của nút */
+    cursor: pointer; /* Biến con trỏ thành hình bàn tay khi di chuột qua nút */
+    transition: background-color 0.3s, color 0.3s; /* Tạo hiệu ứng chuyển đổi màu nền và màu chữ */
+  }
+
+  #orderbutton {
+    margin-left: -5%;
+    z-index: 5;
+    width: 12%;
+    background-color: rgba(25, 25, 13, 255); /* Màu nền mặc định của nút */
+    color: white; /* Màu chữ mặc định của nút */
+    cursor: pointer; /* Biến con trỏ thành hình bàn tay khi di chuột qua nút */
+    transition: background-color 0.3s, color 0.3s; /* Tạo hiệu ứng chuyển đổi màu nền và màu chữ */
+  }
+  
+}
+
+@media only screen and (max-width: 440px) {
+  .check {
+    padding: 3px 16px;
+  }
+
+  .order {
+    padding: 10px 16px;
+  }
+
+  #span {
+    font: 0.2em Amiri sans-serif;
+  }
+
+  #checkmore {
+    margin-left: -4%;
+    width: 10%;
+    z-index: 5;
+    background-color: rgba(39, 42, 25, 255); /* Màu nền mặc định của nút */
+    color: white; /* Màu chữ mặc định của nút */
+    cursor: pointer; /* Biến con trỏ thành hình bàn tay khi di chuột qua nút */
+    transition: background-color 0.3s, color 0.3s; /* Tạo hiệu ứng chuyển đổi màu nền và màu chữ */
+  }
+
+  #orderbutton {
+    margin-left: -5%;
+    z-index: 5;
+    width: 10%;
+    background-color: rgba(25, 25, 13, 255); /* Màu nền mặc định của nút */
+    color: white; /* Màu chữ mặc định của nút */
+    cursor: pointer; /* Biến con trỏ thành hình bàn tay khi di chuột qua nút */
+    transition: background-color 0.3s, color 0.3s; /* Tạo hiệu ứng chuyển đổi màu nền và màu chữ */
+  }
+  
 }

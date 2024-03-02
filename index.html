@@ -16,7 +16,7 @@
 </head>
 <body>
 
-    <div id="wrapper" class="container-fluid p-0">
+    <div id="wrapper" class="100% p-0">
         <div class="box logozeus">
             <img src="beer/logozeus.png" id="imgzeus" alt="logozeus">
             <img id="thanh1" src="beer/thanhngang.png">
@@ -28,7 +28,7 @@
             <img src="beer/scroll.png" alt="scroll" width="8%">
         </div>
         <div class="box muiten">
-            <img src="beer/muiten.png" alt="muiten" width="2%">
+            <img src="beer/muiten.png" alt="muiten" width="1.5%">
         </div>
         <div class="box cungbia" width="100%">
             <img src="beer/cungbia.png" alt="cungbia" width="100%">
@@ -76,15 +76,30 @@
             <img src="beer/start.png" alt="start" width="47%">
         </div>
         <div class="box beersmall">
-            <img src="beer/beersmall.png" alt="beersmall" width="26%">
+            <img src="beer/beersmall.png" alt="beersmall" width="20%">
         </div>
         <div class="box order">
-            <button id="order"><span id="span">ORDER ZEUS</span></button>
+            <button id="orderbutton"><span id="span">ORDER ZEUS</span></button>
         </div>
         <div class="box rotbia">
             <img src="beer/rotbia.png" alt="rotbia" width="100%">
         </div>
     </div>
 
+    <script>
+        document.getElementById("checkmore").addEventListener("click", function() {
+        
+            this.disabled = true;
+            
+            this.removeEventListener("click", arguments.callee);
+        });
+
+        document.getElementById("order").addEventListener("click", function() {
+           
+            this.disabled = true;
+            
+            this.removeEventListener("click", arguments.callee);
+        });
+        </script>
 </body>
 </html>
