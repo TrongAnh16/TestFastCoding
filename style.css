@@ -1,7 +1,7 @@
 #wrapper {
   position: relative;
   background: #1a1c0f;
-  width: 35%;
+  width: 100%;
   display: flex;
   margin-bottom: 0%;
 }
@@ -111,6 +111,26 @@
   z-index: 2;
 }
 
+.scroll {
+  margin-top: 46%;
+    margin-left: 47%;
+    z-index: 3;
+}
+
+.muiten {
+  margin-top: 48%;
+    margin-left: 50%;
+    z-index: 3;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+  0%
+  {
+    transform: translateY(-5px);
+  }
+}
+
 .zeus {
   margin-top: 74%;
   margin-left: 12%;
@@ -129,26 +149,35 @@
     z-index: 5;
 }
 
-#checkmore {
+#span {
+  font: 0.7em Amiri sans-serif;
   font-family: "Amiri", serif;
-  width: 14%;
-    height: 1.3em;
+  position: relative;
+  display: inline-block;
+  padding: 2%;
+}
+
+#checkmore {
+  width: 10vw;
     background-color: rgba(39,42,25,255); /* Màu nền mặc định của nút */
     color: white; /* Màu chữ mặc định của nút */
-    border: rgba(55,59,35,255);
-    border-width: 2em;
     cursor: pointer; /* Biến con trỏ thành hình bàn tay khi di chuột qua nút */
     transition: background-color 0.3s, color 0.3s; /* Tạo hiệu ứng chuyển đổi màu nền và màu chữ */
-}
+  }
 
 #checkmore:hover {
   background-color: #ddeade; /* Màu nền khi di chuột qua */
     color: rgb(163, 57, 57); /* Màu chữ khi di chuột qua */
 }
 
+#checkmore:active {  
+  background-color: rgba(39,42,25,255);  
+  box-shadow: 0 5px #666;  
+  transform: translateY(4px);
+}
+
 #p1 {
   padding-top: 6%;
-  justify-content: center;
   font-size: 60%;
 }
 
@@ -159,19 +188,16 @@
 }
 
 .order {
+  display: block;
   margin-top: 201%;
     margin-left: 46%;
     z-index: 5;
 }
 
 #order {
-  font-family: "Amiri", serif;
-  width: 14%;
-    height: 1.3em;
+  width: 10vw;
     background-color: rgba(25,25,13,255); /* Màu nền mặc định của nút */
     color: white; /* Màu chữ mặc định của nút */
-    border: rgba(64,68,41,255);
-    border-width: 2em;
     cursor: pointer; /* Biến con trỏ thành hình bàn tay khi di chuột qua nút */
     transition: background-color 0.3s, color 0.3s; /* Tạo hiệu ứng chuyển đổi màu nền và màu chữ */
 }
@@ -179,6 +205,12 @@
 #order:hover {
   background-color: #ddeade; /* Màu nền khi di chuột qua */
     color: rgb(163, 57, 57); /* Màu chữ khi di chuột qua */
+}
+
+#order:active {  
+  background-color: rgba(39,42,25,255);  
+  box-shadow: 0 5px #666;  
+  transform: translateY(4px);
 }
 
 .lorembig {
